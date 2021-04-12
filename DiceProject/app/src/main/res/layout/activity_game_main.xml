@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/dice6_max"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="49dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/max"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dice4_name" />
+
+    <EditText
+        android:id="@+id/dice6_min"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="1"
+        app:layout_constraintEnd_toStartOf="@+id/dice6_max"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <EditText
+        android:id="@+id/dice6_name"
+        android:layout_width="191dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Dice6"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/dice6_value"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="49dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/min"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/textView21"
+        app:layout_constraintTop_toBottomOf="@+id/dice4_name" />
+
+    <TextView
+        android:id="@+id/dice6_value"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:hint="@string/dice1_value"
+        android:textAlignment="center"
+        android:textSize="65sp"
+        app:layout_constraintEnd_toStartOf="@+id/dice6_min"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/dice4_name" />
+
+    <EditText
+        android:id="@+id/dice5_max"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/_6"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/dice5_min"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="49dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Max"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/dice3_name" />
+
+    <EditText
+        android:id="@+id/dice5_min"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="1"
+        app:layout_constraintStart_toEndOf="@+id/dice5_value"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <EditText
+        android:id="@+id/dice5_name"
+        android:layout_width="191dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Dice5"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dice5_value"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="49dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/min"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/dice5_value"
+        app:layout_constraintTop_toBottomOf="@+id/dice3_name" />
+
+    <TextView
+        android:id="@+id/dice5_value"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/dice1_value"
+        android:textAlignment="center"
+        android:textSize="65sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dice3_name" />
+
+    <EditText
+        android:id="@+id/dice4_max"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="49dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:text="Max"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dice2_name" />
+
+    <EditText
+        android:id="@+id/dice4_min"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="1"
+        app:layout_constraintEnd_toStartOf="@+id/dice4_max"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <EditText
+        android:id="@+id/dice4_name"
+        android:layout_width="191dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="DIce4"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/dice4_value" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="49dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/min"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/dice2_name" />
+
+    <TextView
+        android:id="@+id/dice4_value"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="4dp"
+        android:hint="@string/dice1_value"
+        android:textAlignment="center"
+        android:textSize="65sp"
+        app:layout_constraintEnd_toStartOf="@+id/dice4_min"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/dice2_name" />
+
+    <EditText
+        android:id="@+id/dice3_max"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="6"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/dice3_min"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="49dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:text="Max"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/dice1_name" />
+
+    <EditText
+        android:id="@+id/dice3_min"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="1"
+        app:layout_constraintStart_toEndOf="@+id/dice3_value"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <EditText
+        android:id="@+id/dice3_name"
+        android:layout_width="191dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Dice3"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dice3_value" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="49dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/min"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/dice3_value"
+        app:layout_constraintTop_toBottomOf="@+id/dice1_name" />
+
+    <TextView
+        android:id="@+id/dice3_value"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/dice1_value"
+        android:textAlignment="center"
+        android:textSize="65sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dice1_name" />
+
+    <EditText
+        android:id="@+id/dice2_max"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="49dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="8dp"
+        android:text="Max"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <EditText
+        android:id="@+id/dice2_min"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="1"
+        app:layout_constraintEnd_toStartOf="@+id/dice2_max"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <EditText
+        android:id="@+id/dice2_name"
+        android:layout_width="191dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Dice2"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/dice2_min" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="49dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/min"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/dice2_value"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/dice1_value"
+        android:textAlignment="center"
+        android:textSize="65sp"
+        app:layout_constraintBottom_toTopOf="@+id/dice2_name"
+        app:layout_constraintEnd_toStartOf="@+id/dice2_min"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/minusDiceBtn"
+        android:layout_width="44dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/minusDiceBtn"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toEndOf="@+id/diceQnty"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/plusDiceBtn"
+        android:layout_width="41dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/plusDiceBtn"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/diceQnty"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dice1_value"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="@string/dice1_value"
+        android:textAlignment="center"
+        android:textSize="65sp"
+        app:layout_constraintEnd_toStartOf="@+id/dice1_min"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="58dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="49dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/min"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/dice1_value"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="49dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Max"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <EditText
+        android:id="@+id/dice1_min"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/_1"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/dice1_name"
+        app:layout_constraintEnd_toStartOf="@+id/dice1_max"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <EditText
+        android:id="@+id/dice1_max"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/_6"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/dice1_name"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <EditText
+        android:id="@+id/dice1_name"
+        android:layout_width="191dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Dice1"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dice1_value" />
+
+    <Button
+        android:id="@+id/rollBtn"
+        android:layout_width="131dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/roll"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <android.support.constraint.Group
+        android:id="@+id/dice1_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="textView5,dice1_min,dice1_max,dice1_value,textView8,dice1_name"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Group
+        android:id="@+id/dice2_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="dice2_min,textView14,dice2_value,dice2_max,dice2_name,textView13"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone" />
+
+    <android.support.constraint.Group
+        android:id="@+id/dice3_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="dice3_max,dice3_min,dice3_name,textView15,textView16,dice3_value"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone" />
+
+    <android.support.constraint.Group
+        android:id="@+id/dice4_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="dice4_value,dice4_min,textView17,dice4_name,textView18,dice4_max"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone" />
+
+    <android.support.constraint.Group
+        android:id="@+id/dice5_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="dice5_name,textView19,dice5_value,dice5_max,dice5_min,textView20"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone" />
+
+    <android.support.constraint.Group
+        android:id="@+id/dice6_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="dice6_max,dice6_value,textView21,dice6_name,dice6_min,textView22"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/game_BackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Return"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rollBtn"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="0.886" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="135dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+    <TextView
+        android:id="@+id/diceQnty"
+        android:layout_width="115dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/number_of_dices"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/readHistoryBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="History"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toEndOf="@+id/rollBtn"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>
